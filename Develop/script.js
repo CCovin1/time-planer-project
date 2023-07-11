@@ -21,4 +21,27 @@ $(function () {
       }
     });
   }
+  // Load saved events from local storage
+  function loadEvents() {
+    $('.time-block').each(function () {
+      var blockId = $(this).attr('id');
+      var event = localStorage.getItem(blockId);
+
+      if (event) {
+        $(this).find('textarea').val(event);
+      }
+    });
+  }
+
+  // Save event when save button is clicked
+  $('.saveBtn').on('click', function () {
+    var blockId = $(this).parent().attr('id');
+    var event = $(this).siblings('.description').val();
+    localStorage.setItem(blockId, event);
+  });
+
+  // Call the necessary functions
+  updateDateTime();
+  updateHourStatus();
+  loadEvents();
 
