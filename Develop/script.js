@@ -45,3 +45,9 @@ $(function () {
   updateHourStatus();
   loadEvents();
 
+  // Update the current time every second
+  setInterval(function () {
+    updateDateTime();
+    updateHourStatus();
+  }, 1000);
+});
