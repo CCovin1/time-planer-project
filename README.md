@@ -2,6 +2,7 @@
 A simple web application for scheduling your work day. The Work Day Scheduler allows you to add important events to a daily planner, helping you manage your time effectively.
 
 ## Work Day Scheduler
+https://ccovin1.github.io/time-planer-project/Links
 ![alttext](ppsc.png)
 ## Features
 Displays the current date and time at the top of the calendar.
